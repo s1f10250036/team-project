@@ -10,12 +10,14 @@
     <body>
         <hl>動物の一般的な分類</hl>
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>哺乳類</li>
+        <li>鳥類/li>
+        <li>爬虫類</li>
+        <li>両生類</li>
+        <li>魚類</li>
+        <li>節足動物</li>
+        <li>軟体動物</li>
+        <li>その他</li>
     </ul>
     </body>
 </html>
