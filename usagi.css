@@ -1,3 +1,9 @@
 h1{
     text-align: center;
 }
+body {
+  background-image: url('big-photo0000-6323.jpg'); 
+  background-size: cover;       
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}

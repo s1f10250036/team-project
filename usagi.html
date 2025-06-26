@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>ウサギ</title>
-        <link rel="stylesheet" href="usagi.css">
-    </head>
-    <body>
-        <h1>ウサギ</h1>
-        <img src="./IMG_4985 (2).jpg" alt="ウサギの写真">  
+<head>
+    <meta charset="UTF-8">
+    <title>ウサギ</title>
+    <link rel="stylesheet" href="usagi.css">
+    <style>
+      .container {
+        display: flex;        /* これを追加！ */
+        align-items: flex-start;
+        gap: 40px;
+        margin: 40px;
+      }
+      .photo {
+        width: 400px;
+      }
+      .photo img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .info {
+        max-width: 600px;
+      }
+    </style>
+</head>
+<body>
+    <h1>ウサギ</h1>
+    <div class="container">
+      <div class="photo">
+        <img src="./IMG_4985 (2).jpg" alt="ウサギの写真">
+      </div>
+      <div class="info">
         <h2>ウサギの基本情報</h2>
         <h3>学名</h3>
-        <p> *Oryctolagus cuniculus*（主に飼育されているのはアナウサギの改良種）</p>
+        <p><i>Oryctolagus cuniculus</i>（主に飼育されているのはアナウサギの改良種）</p>
         <h3>寿命</h3>
         <p>一般的に5～10年、飼育環境・健康管理によっては10年以上生きることもあります</p>
         <h3>体重</h3>
-        <P>種類によって異なりますが、1～3kgの小型種から5kg以上の大型種までいます</P>
-        <h2>ウサギの性格・特徴</h2>
+        <p>種類によって異なりますが、1～3kgの小型種から5kg以上の大型種までいます</p>
+        </div>
+    </div>
+    <h2>ウサギの性格・特徴</h2>
         <h3>性格</h3>
         <p>基本的にはおとなしく、臆病ですが、好奇心も強く人によく慣れます。個体差が大きく、活発な子やおっとりした子も。</p>
         <h3>知能</h3>
@@ -28,5 +53,7 @@
         <h3>ホーランドロップ</h3>
         <p>垂れ耳がかわいらしい小型種。</p>
         <h3>ミニレッキス</h3>
-        <P>なめらかな短毛で肌触りが特徴。</P> 
-    </body>
+        <p>なめらかな短毛で肌触りが特徴。</p>
+      
+</body>
+</html>
