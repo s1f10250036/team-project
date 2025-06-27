@@ -1,9 +1,78 @@
-h1{
-    text-align: center;
-}
 body {
-  background-image: url('big-photo0000-6323.jpg'); 
-  background-size: cover;       
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
+  background-image: url('big-photo0000-6323.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "游ゴシック体", YuGothic, "Yu Gothic", "メイリオ", Meiryo, sans-serif;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 32px;
+  border-radius: 18px;
+  max-width: 850px;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+h1 {
+  text-align: center;
+}
+
+.usagi-img {
+  display: block;
+  margin: 24px auto;
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+h2, strong {
+  color: #222;
+}
+
+p {
+  color: #222;
+  margin-bottom: 1.5em;
+  line-height: 1.8;
+}
+.main-content {
+  background: rgba(255,255,255,0.86);
+  padding: 10vw 2vw;
+  border-radius: 18px;
+  max-width: 1000px;
+  margin: 44px auto 44px auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.17);
+}
+.info {
+  max-width: 600px;
+}
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+.photo {
+  width: 400px;
+  flex-shrink: 0;
+}
+.photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.11);
+  }
+.photo {
+  width: 40%;
+}
+.picture{
+  width: 20%;
+}
+.picture img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.11);
 }
