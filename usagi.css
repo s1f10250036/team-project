@@ -18,6 +18,16 @@ body {
 
 h1 {
   text-align: center;
+  font-family: "Yuji Syuku", "Zen Maru Gothic", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background: rgba(250,255,240,0.7); 
+  display: inline-block;
+  padding: 0.35em 2em;
+  border-radius: 24px;
+  margin-top: 32px;
+  box-shadow: 0 2px 4px rgba(120, 120, 80, 0.10);
 }
 
 .usagi-img {
@@ -28,15 +38,37 @@ h1 {
   box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
-h2, strong {
-  color: #222;
+h2 {
+  font-size: 1.5em;
+  color: #357960;
+  font-weight: 700;
+  position: relative;
+  margin: 2.5em 0 1.2em 0;
+  padding-left: 0.18em;
+  letter-spacing: 0.04em;
 }
-
+h2::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 28px;
+  background: #C5E1A5;
+  border-radius: 6px;
+  position: absolute;
+  left: -20px;
+  top: 2px;
+}
 p {
   color: #222;
-  margin-bottom: 1.5em;
-  line-height: 1.8;
 }
+strong {
+  color: #0E5E46;
+  font-weight: 700;
+  background: linear-gradient(90deg, #C5E1A5 30%, transparent 100%);
+  border-radius: 3px;
+  padding: 2px 6px;
+}
+
 .main-content {
   background: rgba(255,255,255,0.86);
   padding: 10vw 2vw;
@@ -70,9 +102,47 @@ p {
 .picture{
   width: 20%;
 }
-.picture img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.11);
+.usagi-types-row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin: 40px 0 60px 0;
+}
+
+.usagi-type-card {
+  background: rgba(255,255,255,0.90);
+  border-radius: 16px;
+  box-shadow: 0 2px 18px rgba(170,190,170,0.15);
+  padding: 28px 22px 20px 22px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.usagi-type-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(92,111,92,0.20);
+}
+
+.usagi-type-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+.usagi-type-card h3 {
+  margin: 0 0 12px 0;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.15em;
+  letter-spacing: 0.03em;
+}
+
+.usagi-type-card p {
+  color: #444;
+  font-size: 0.99em;
+}
+.box{
+  text-align: center;
 }
