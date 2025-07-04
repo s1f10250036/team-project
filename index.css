@@ -4,8 +4,7 @@
     border-bottom: solid 4px #8c55a9;}
 
 body {
-  background-color: #e2c7c7;
-  color: #000000;
+  background: linear-gradient(215deg, #ff6b81,#fff0f6,#ff9ec4)
 }
 li{border-left: solid 2px #cc0000;
    padding-left: 15px;}

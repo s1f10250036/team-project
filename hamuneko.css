@@ -1,9 +1,128 @@
-.syasinn{
-    border-radius: 30px
+/* Googleフォント読み込み */
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+:root {
+  --primary-color: #ff9ec4;
+  --secondary-color: #ffd6e8;
+  --accent-color: #ff6b81;
+  --bg-gradient-start: #fff0f6;
+  --bg-gradient-end: #ffe4e1;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --border-radius: 1rem;
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-body{
-    background: linear-gradient(135deg, #feffac, #764ba2, #e66465)
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-h1{
-    font-size: 100px;
+
+body {
+  font-family: 'Hachi Maru Pop', cursive, sans-serif;
+  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.photo img.syasinn {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 6px dashed var(--primary-color);
+  box-shadow: var(--shadow-light);
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.photo img.syasinn:hover {
+  transform: scale(1.08) rotate(2deg);
+  border-color: var(--accent-color);
+}
+
+.info {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  max-width: 400px;
+  text-align: left;
+  position: relative;
+}
+
+.info::before,
+.info::after {
+  content: "🐾";
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0.2;
+}
+
+.info::before {
+  top: 1rem;
+  left: 1rem;
+}
+
+.info::after {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px dashed var(--secondary-color);
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .photo img.syasinn {
+    width: 80%;
+    height: auto;
+  }
 }
